@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+
+}
+header{
+    position: fixed;
+    top:0px;
+    border-style: double;
+    border-color: black;
+    width: 95%;
+    margin: 0 10px;
+    
+}
+
+header h1{
+    text-align: center
+}
+
+div{
+ margin:100px 30px ; 
+}
+
+
+
+    

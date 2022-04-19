@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+    <div>
+    <form action="" method="post" target="_blank">
+        <table>
+            <tr>
+                <td><label for="name">Name :</label></td>
+                <td><input type="text" id="name" placeholder="Enter full name" autocomplete="off" pattern="[A-Za-z]" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="fname">Father's Name :</label></td>
+                <td><input type="text" id="fname" placeholder="Enter Father's name" required></td>   
+            </tr>
+
+            <tr>
+                <td><label for="mname">Mother's Name :</label></td>
+                <td><input type="text" name="mname" id="mname" placeholder="Enter Mother's name" required></td>
+            </tr>
+            <tr>
+                <td><label for="phonenum">Phone Number :</label></td>
+                <td><input type="number" pattern="[789][0-9]{9} title="Enter valid number" name="phonenum" id="phonenum" placeholder="Enter Phone Number"  required ></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Email :</label></td>
+                <td><input type="email" name="mail" id="mail" placeholder="Email" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender :</label></td>
+                <td><input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="others">Others</td>
+            </tr>
+            <tr>
+                <td><label for="date">Date Of Birth :</label></td>
+                <td><input type="date" id="date" name="date" placeholder="dd-mm-yyyy" min="1999-01-01" max="2024-01-01"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address :</label></td>
+                <td><input type="textarea" name="address" id="address" placeholder="Enter Address   "></td>
+            </tr>
+            <tr>
+                <td><label for="bloodgroup">Blood Group :</label></td>
+                <td>
+                    <select name="bloodgroup" id="bloodgroup">
+                    <option>Select</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    </select>
+                </td>
+            </tr>
+	     <tr>
+                <td><label for="hobbies">Hobbies :</label></td>
+                <td>
+                    <select name="hobbies" id="hobbies">
+                    <option>Select hobbies</option>
+                    <option value="sports">Sports</option>
+                    <option value="reading">Reading</option>
+                    <option value="tracking">Tracking</option>
+                    
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="department">Department :</label></td>
+                <td>
+                    <input type="radio" value="cse" name="department">CSE
+                    <input type="radio" value="eee" name="department">EEE
+                    <input type="radio" value="bba" name="department">BBA
+                </td>            
+            </tr>
+            <tr>
+                <td><label for="courses">Courses :</label></td>
+                <td>
+                    <input type="checkbox" value="c">C
+                    <input type="checkbox" value="c++">C++
+                    <input type="checkbox" value="java">Java
+                    <input type="checkbox" value="AI">AI
+                    <input type="checkbox" value="ML">Machine learning
+                    <input type="checkbox" value="robotics">Robotics
+                </td>
+            </tr>
+            <tr>
+                <td><label for="photo">Photo :</label></td>
+                <td><input type="file" name="photo" id="photo"></td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        <!-- <a href="#submit" value="submit">Submit</a> -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    </div>
+    
+</body>
+</html>

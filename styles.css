@@ -1,0 +1,16 @@
+*{
+    font-family: sans-serif;
+   
+}
+table,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+
+th,td{
+    padding:20px;
+    
+}
+
